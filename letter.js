@@ -1,5 +1,5 @@
-function Letter(value) {
-    this.letter = value;
+function Letter(letter) {
+    this.letter = letter;
     this.guessed = false;
     this.toString = function () {
 
@@ -14,7 +14,6 @@ function Letter(value) {
             }
         }
     };
-    
     this.guess = function (guess) {
         if (guess === this.letter) {
             this.guessed = true;
@@ -23,3 +22,4 @@ function Letter(value) {
 }
 
 module.exports = Letter;
+
